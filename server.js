@@ -23,7 +23,7 @@ app.use(session({
   saveUninitialized: false,
   cookie: { httpOnly: true, sameSite: "lax", secure: process.env.NODE_ENV === "production", maxAge: 8 * 60 * 60 * 1000 }
 }));
-app.use(express.static(path.join(__dirname, "public")));
+app.get("/", (req, res) => res.sendFile(path.join(__dirname, "index.html")));
 
 const FEEDS = [
   { category: "Duniya", name: "Al Jazeera", url: "https://www.aljazeera.com/xml/rss/all.xml" },
