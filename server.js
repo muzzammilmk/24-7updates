@@ -27,7 +27,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 const FEEDS = [
   { category: "Duniya", name: "Al Jazeera", url: "https://www.aljazeera.com/xml/rss/all.xml" },
-  { category: "Wasanni", name: "BBC Sport", url: "https://feeds.bbci.co.uk/sport/rss.xml?edition=uk" },
+  { category: "Wasanni", name: "BBC hausa", url: "https://feeds.bbci.co.uk/hausa/rss.xml?edition=uk" },
   { category: "Wasanni", name: "ESPN", url: "https://www.espn.com/espn/rss/news" },
   { category: "Fasaha", name: "The Verge", url: "https://www.theverge.com/rss/index.xml" },
   { category: "Nishaɗi", name: "The Guardian Culture", url: "https://www.theguardian.com/culture/rss" }
